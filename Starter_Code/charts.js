@@ -65,17 +65,17 @@ function buildCharts(sample) {
     // Deliverable 1: 4. Create a variable that filters the samples for the object with the desired sample number.
     var resultArray = samples.filter(sampleObj => sampleObj.id == sample);
     // Deliverable 3: 1. Create a variable that filters the metadata array for the object with the desired sample number.
-
+    var metadata = data.metadata;
     // Deliverable 1: 5. Create a variable that holds the first sample in the array.
     var result = resultArray[0];
     // Deliverable 3: 2. Create a variable that holds the first sample in the metadata array.
-
+    var metasample = metadataArray[];
     // Deliverable 1: 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otu_ids = result.otu_ids;
     var otu_labels = result.otu_labels;
     var sample_values = result.sample_values.slice(0, 10).reverse();
     // Deliverable 3: 3. Create a variable that holds the washing frequency.
-
+    var washingFrequency = metasample.wfreq;
 
     // Deliverable 1: 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order 
